@@ -6,7 +6,6 @@ import { Modal } from 'components/Modal/Modal';
 import { fetchImages } from 'ApiService/ApiService';
 import { Button } from 'components/Button/Button';
 import { Loader } from 'components/Loader/Loader';
-import errorImg from '../../error.png';
 
 export class App extends Component {
   state = {
@@ -35,7 +34,7 @@ export class App extends Component {
               return { images: [...prevState.images, ...hits] };
             })
           : this.setState({ images: hits });
-        
+
         this.setStatus(totalHits ? 'resolved' : 'rejected');
       } catch (error) {
         console.error(error.message);
@@ -74,8 +73,7 @@ export class App extends Component {
   };
 
   render() {
-    const { images, query, status, modalImage, page, totalPages } =
-      this.state;
+    const { images, query, status, modalImage, page, totalPages } = this.state;
 
     return (
       <Container>
@@ -94,7 +92,6 @@ export class App extends Component {
             <ErrorMsg>
               Sorry... We couldn't find pictures matching "{query}"
             </ErrorMsg>
-            <ErrorImg src={errorImg} alt="Error" />
           </>
         )}
         {modalImage && (
