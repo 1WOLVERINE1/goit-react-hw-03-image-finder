@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { ImageGallery } from 'components/ImageGallery/ImageGallery';
 import { Searchbar } from 'components/Searchbar/Searchbar';
-import { Container, ErrorImg, ErrorMsg } from './App.styled';
+import { Container, ErrorMsg } from './App.styled';
 import { Modal } from 'components/Modal/Modal';
 import { fetchImages } from 'ApiService/ApiService';
 import { Button } from 'components/Button/Button';

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const Container = styled.div`
   display: grid;
@@ -11,9 +11,4 @@ export const ErrorMsg = styled.p`
   font-weight: 600;
   font-size: 24px;
   text-align: center;
-`;
-
-export const ErrorImg = styled.img`
-  width: 300px;
-  margin: auto;
 `;
